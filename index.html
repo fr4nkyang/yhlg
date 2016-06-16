@@ -64,6 +64,8 @@
 
 				<li><a href="#">空运查询</a>
 					<ul>
+						<li><a href="http://120.26.109.243:8080/view/check.jsp">单号查询</a></li>
+
 						<li><a href="http://cargo2.ce-air.com/MU/index.aspx">东方航空</a></li>
 						<li><a href="http://tang.csair.com/index.aspx">南方航空</a></li>
 
@@ -111,16 +113,20 @@
 	<div id="content-wrapper" class="row">
 		<div class="row">
 			<div class="three columns">
+
+
 				<h4>运单查询</h4>
+			<form action="http://120.26.109.243:8080/view/check.jsp" method="Get">
+			
 
 				<div class= "icon-hover">
-				<input type="text" placeholder="输入运单号..." style="height:150px;width:150px"  />
+				<input type="text" id="ticket" name="ticket" placeholder="输入运单号..." style="height:150px;width:150px"  />
 				</div>
 
+				<button type="submit" class="button nice" >查询！ &rsaquo;</button>
+			</form>
 
 
-
-				<a href="#" class="button nice">查询！ &rsaquo;</a>
 			</div>
 			<!-- END .three columns -->
 
